@@ -1,0 +1,49 @@
+.GroupAlert-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 860px;
+    height: 130px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid #a0a096;
+    box-shadow: 4px 4px 4px 0px rgba(85, 84, 84, 0.5);
+  }
+  
+  .write-image-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    border: none;
+  }
+  
+  .write-image-btn button {
+    display: relative;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    margin-left: 5%;
+  }
+  
+  .write-image-btn:active {
+    transform: scale(0.9);
+    transition: transform 0.2s;
+  }
+  
+  .title {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 3%; */
+    width: 80%;
+  }

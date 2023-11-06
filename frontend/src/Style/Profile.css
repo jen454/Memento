@@ -1,0 +1,171 @@
+.Profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 130px;
+  max-width: 100%;
+  border-radius: 30px;
+  background: white;
+  border: 2px solid #a0a096;
+  box-shadow: 4px 4px 4px 0px rgba(85, 84, 84, 0.5);
+  position: relative;
+}
+
+.Profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 84%;
+}
+
+.user-info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* 이름과 알림 로고를 수직 중앙 정렬 */
+  justify-content: center;
+  /* 이름을 수평 중앙 정렬 */
+  margin-bottom: 5%;
+}
+
+.user-info span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  /* margin-left: 90%; */
+  margin-top: 0.7em;
+  max-width: 100%;
+}
+
+.alarm-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+  /* Position 추가 */
+  position: absolute;
+  right: 15%;
+  /* 오른쪽 끝으로부터의 거리 */
+  top: 20%;
+  /* 상단으로부터의 거리 */
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  /* margin: 5px; */
+}
+
+.logout-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Profile-content .logout-button {
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  /* 로그아웃 버튼을 아래로 위치 */
+  border-radius: 30px;
+  /* 로그아웃 버튼 둥글게 */
+  border: 1.5px solid black;
+  background: #FFF;
+  box-shadow: 4px 4px 4px 0px rgba(85, 84, 84, 0.5);
+}
+
+.alarm-list {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 80%;
+  margin-top: 9%;
+  padding-top: 20px;
+  /* max-height: 80vh; 모달 높이의 최대값을 설정 */
+  overflow-y: auto;
+  /* 내용이 넘칠 때 스크롤 생성 */
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  /* 수직 방향으로 정렬 */
+  justify-content: center;
+  align-items: center;
+  /* 수직 가운데 정렬 */
+  width: 342px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 3px solid #092c4c;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 19px;
+  padding-top: 32px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+  /* 74.667% */
+}
+
+.accept-button {
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #61af5f;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 133px;
+  height: 43px;
+  flex-shrink: 0;
+}
+
+.refuse-button {
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #e83f3f;
+  margin-left: 35px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 133px;
+  height: 43px;
+  flex-shrink: 0;
+}
+
+.buttons {
+  padding-top: 23px;
+}
+
+.buttons button:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}

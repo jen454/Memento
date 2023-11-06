@@ -1,0 +1,158 @@
+.GroupAdd-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-image {
+  position: relative;
+  width: 1670px;
+  height: 796px;
+  background-image: url("../image/background.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-inner-image {
+  width: 1513px;
+  height: 723px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #fff;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* 가로 가운데 정렬 */
+  align-items: center;
+  /* 세로 가운데 정렬 */
+  margin-top: 80px;
+}
+
+.search-bar {
+  position: absolute;
+  width: 567px;
+  height: 91px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 3px solid #092c4c;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 50px;
+}
+
+.search-button {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 460px;
+}
+
+.search-button button {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+}
+
+.search-button img {
+  width: 45px;
+  height: 45px;
+}
+
+.search-bar input {
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid black;
+  /* 아래에만 선을 추가합니다 */
+  margin-top: 22px;
+  margin-left: 40px;
+  padding-bottom: 10px;
+  width: 486.004px;
+}
+
+.main {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 150px;
+}
+
+#name {
+  color: #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 912px;
+  height: 58px;
+  flex-shrink: 0;
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: #000;
+  margin-left: 42px;
+  border-radius: 10px;
+}
+
+#friend {
+  color: #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 912px;
+  height: 224px;
+  flex-shrink: 0;
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: #000;
+  margin-left: 42px;
+  margin-top: 38px;
+  border-radius: 10px;
+}
+
+#save-button {
+  width: 191px;
+  height: 63px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #61af5f;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#save-button:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+
+.multiline-text {
+  white-space: pre-line;
+}

@@ -1,0 +1,136 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dashboard-background-image {
+  position: relative;
+  width: 1670px;
+  height: 796px;
+  background-image: url("../image/background.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.rounded-input-container {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+}
+
+.rounded-input-container:focus-within .line {
+  width: 100%;
+}
+
+.rounded-input {
+  width: 100%;
+  font-size: 24px;
+  /* 폰트 크기 변경 */
+  font-weight: bold;
+  /* 입력한 텍스트를 볼드체로 만듭니다 */
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #000;
+  border-radius: 15px;
+  background-color: white;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.rounded-input:focus {
+  border: 2px solid #555;
+  /* 테두리 색상을 더 진하게 변경 */
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1513px;
+  height: 723px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #fff;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.square {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 200px;
+  /* 정사각형의 너비를 설정합니다. */
+  height: 260px;
+  /* 정사각형의 높이를 설정합니다. */
+  display: flex;
+  /* Flex layout을 시작합니다. */
+  justify-content: center;
+  /* 중앙 가로 정렬 */
+  align-items: center;
+  /* 중앙 수직 정렬 */
+}
+
+.transparent-button {
+  background: transparent;
+  /* 배경을 투명하게 변경 */
+  border: none;
+  /* 테두리 제거 */
+  margin-top: 40px;
+}
+
+.transparent-button:active {
+  transform: scale(0.9);
+  /* 버튼이 눌렸을 때 크기를 90%로 줄입니다. */
+  transition: transform 0.1s;
+  /* 애니메이션 효과를 더합니다. */
+}
+
+.button-text {
+  font-weight: bold;
+  margin-left: 16px;
+  /* 텍스트를 굵게 만듭니다. */
+}
+
+.square-1 {
+  background-image: url('../image/image_note.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  /* 테두리 제거 */
+  background-color: transparent;
+  /* 배경색 투명 */
+}
+
+.square-2,
+.square-3,
+.square-4,
+.square-5,
+.square-6,
+.square-7,
+.square-8,
+.square-9 {
+  background-image: url('../image/note.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  /* 테두리 제거 */
+  background-color: transparent;
+  /* 배경색 투명 */
+}

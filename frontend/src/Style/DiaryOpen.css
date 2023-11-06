@@ -1,0 +1,125 @@
+.DiaryOpen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-image {
+  position: relative;
+  width: 1670px;
+  height: 796px;
+  background-image: url("../image/background.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-inner-image {
+  position: absolute;
+  width: 1513px;
+  height: 723px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #fff;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
+#index {
+  position: absolute;
+  width: 192px;
+  height: 210px;
+  flex-shrink: 0;
+  margin-top: 60px;
+  margin-left: 1728px;
+}
+
+#home {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  margin-top: 85px;
+  margin-left: 838px;
+}
+
+.select-date {
+  display: flex;
+  height: 110px;
+  flex-shrink: 0;
+  color: #000;
+  justify-content: center;
+  /* 수평 가운데 정렬 */
+  align-items: center;
+  /* 수직 가운데 정렬 */
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.4px;
+  /* 62.222% */
+}
+
+.select-date img {
+  width: 65px;
+  height: 65px;
+  margin: 0 10px;
+  /* 이미지와 텍스트 사이의 간격을 조절 */
+}
+
+.select-date h2 {
+  margin: 0 10px;
+  /* 텍스트와 이미지 사이의 간격을 조절 */
+  display: inline-block;
+}
+
+.timer-emoji {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  /* 수평 가운데 정렬 */
+  align-items: center;
+  /* 수직 가운데 정렬 */
+  margin-top: 25px;
+}
+
+.timer-order {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.4px;
+  /* 37.333% */
+  margin-top: 105px;
+}
+
+.DiaryOpen-container button {
+  display: inline-flex;
+  padding: 18px 150px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background: #61af5f;
+  color: #fff;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+  margin-left: 543px;
+  margin-top: 100px;
+}
+
+.DiaryOpen-container button:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}

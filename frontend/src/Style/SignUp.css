@@ -1,0 +1,121 @@
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .background-image {
+    position: relative;
+    width: 1670px;
+    height: 796px;
+    background-image: url('../image/background.png');
+    background-size: 100% 100%;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    transform: scale(1.25);
+  }
+  
+  .signup-form input {
+    width: 100%;
+    height: 35px; /* 높이 추가 */
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  /* SignupPage.css */
+  .input-field {
+    flex-grow: 2;
+    width: 100%;
+    border-radius: 20px; /* 모서리를 둥글게 만듭니다. 숫자를 조절해 원하는 정도로 둥글게 할 수 있습니다. */
+  }
+  
+  .signup-form input[type='text'],
+  .signup-form input[type='email'],
+  .signup-form input[type='password'] {
+    border: none;
+    width: 350px; /* 입력 필드의 너비를 일치시킵니다. */
+    height: 65px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.5rem; /* 입력 필드 안쪽 여백을 똑같이 설정 */
+    padding-left: 15px;
+    margin-bottom: 0.3rem; /* 각 입력 필드 간에 동일한 여백 설정 */
+    box-sizing: border-box; /* 동일한 너비와 사이의 여백을 얻기 위한 설정 */
+  }
+  
+  /* SignupPage.css */
+  .signup-image-btn {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    background-image: url('../image/sign_up.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: none; /* 선택적: 테두리가 있는 경우 테두리를 제거합니다. */
+  }
+  
+  /* SignupPage.css */
+  .signup-image-btn:active {
+    transform: scale(0.9); /* 버튼이 눌렸을 때 크기를 줄입니다. */
+    transition: transform 0.2s; /* 효과의 지속 시간을 정의합니다. */
+  }
+  
+  .signup-box h1 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px; /* 입력란과의 거리를 벌립니다 */
+    color: #61af5f; /* 텍스트 색상을 변경합니다 */
+    font-size: 55px;
+    font-weight: bold;
+  }
+  
+  /* SignupPage.css */
+  .signup-box p {
+    text-align: center; /* 텍스트를 중앙으로 배치합니다. */
+    margin-top: 16px; /* 원하는 상단 여백을 설정합니다. */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* SignupPage.css */
+  .login-link {
+    color: #726f6f;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none; /* 밑줄을 제거합니다. */
+  }
+  
+  .login-link a {
+    color: #61af5f;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  

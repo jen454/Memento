@@ -1,0 +1,272 @@
+.DiaryEntry-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 1670px;
+  height: 796px;
+  background-image: url('../image/background.png');
+}
+
+.diary-image {
+  object-fit: cover; /* 이미지가 컨테이너 크기에 맞게 조절되도록 합니다. */
+  width: 100%; /* 이미지 너비를 100%로 설정합니다. */
+  height: 100%; /* 이미지 높이를 100%로 설정합니다. */
+}
+
+.DE-main-layout {
+  display: flex;
+  position: absolute;
+  width: 1513px;
+  height: 723px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #fff;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
+.DE-left-content {
+  display: flex;
+  margin-right: 12rem; /* 변경됨 */
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 350px; /* 원하는 최소 너비로 조정할 수 있습니다. */
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.DE-right-content {
+  display: flex;
+  min-width: 350px; /* 원하는 최소 너비로 조정할 수 있습니다. */
+  flex-direction: column;
+  margin-top: 130px; /* 변경됨 */
+  align-items: center;
+  padding-top: 0rem; /* 변경됨 */
+  gap: 1.25rem; /*  변경됨 */
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.9375rem; /* 변경됨 */
+}
+
+.custom-input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center; /* 입력란을 가로 선위에 놓습니다 */
+  position: relative; /* 내부 선을 포지셔닝할 기준입니다 */
+}
+
+.custom-input {
+  flex-grow: 1;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.25rem;
+  padding-left: 15px;
+  margin-bottom: 0;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.memo_custom-input-wrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.memo_custom-input {
+  flex-grow: 1;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.25rem;
+  margin-bottom: 0;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.memo_underline {
+  width: 100%; /* 선 길이를 줄이고자 하는 비율(%)로 변경하세요. 예: 50% */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.33);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  right: 0;
+}
+
+.underline {
+  position: absolute; /* 선의 위치를 입력 필드 기준으로 절대 위치 설정 */
+  bottom: 0; /* 선의 바닥 위치와 입력 필드와 동일하게 설정 */
+  width: 110%; /* 선의 너비를 원하는 값으로 조절 */
+  height: 2px;
+  background-color: #000;
+}
+
+.weather-underline {
+  width: 110%; /* 날씨 입력란의 밑에 선 길이를 원하는 값으로 설정하세요 */
+}
+
+.feeling-underline {
+  width: 121.5%; /* 기분 입력란의 밑에 선 길이를 원하는 값으로 설정하세요 */
+}
+
+.feeling-input {
+  margin-left: 3rem; /* 원하는 간격만큼 떨어뜨립니다 */
+}
+
+.fixed-text {
+  position: static; /* 고정된 텍스트의 위치를 정적(기본값)으로 변경 */
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  user-select: none; /* 고정 텍스트 선택을 방지 */
+  margin-right: 8px; /* 고정 텍스트와 입력란 사이에 간격을 조절 */
+}
+
+.form-group {
+  margin-bottom: 0.9375rem; /* 변경됨 */
+}
+
+label {
+  font-size: 1.125rem; /* 변경됨 */
+}
+
+textarea#myTextarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-textarea {
+  width: 110%;
+  height: 28rem; /* 변경됨 */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.5rem;
+  padding-left: 15px;
+  margin-top: 1rem; /* 일기 입력란이 날씨와 기분 입력란에서 떨어집니다 */
+  box-sizing: border-box;
+  background: none;
+  border: 2px bold #000; /* 원하는 테두리 스타일을 설정하십시오 */
+  outline: none;
+}
+
+input[type='file'] {
+  font-size: 0.875rem; /* 변경됨 */
+}
+
+.form-group-inline {
+  display: flex;
+  flex-direction: row;
+  gap: 0.9375rem; /* 변경됨 */
+}
+
+.save-button {
+  border: none;
+  background-color: #343a40;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-image-btn {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-image: url('../image/Luck.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: none; /* 선택적: 테두리가 있는 경우 테두리를 제거합니다. */
+  background-color: transparent;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.question-input {
+  border-radius: 50px; /* 입력 창 높이의 절반 이상인 값을 설정하세요 */
+  padding: 10px 20px; /* 패딩을 조절하여 입력창의 높이를 조절할 수 있습니다.\*/
+  margin-top: 20px;
+}
+
+.random-question {
+  font-weight: bold; /* 두껍게 만들려면 이 값을 'bold'로 설정 */
+  font-size: 24px; /* 원하는 글자 크기로 설정 */
+}
+
+.change-question-btn {
+  padding: 10px 15px;
+  background-color: #45a049;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px; /* 원하는 글씨 크기로 변경 */
+}
+
+.custom-file-upload {
+  padding: 10px 15px;
+  background-color: #45a049;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.custom-file-upload:hover {
+  background-color: #67e3ef;
+}
+
+.change-question-btn:hover {
+  background-color: #67e3ef;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(0.9);
+  }
+  to {
+    transform: rotate(360deg) scale(0.9);
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .form-group-inline {
+    flex-direction: row;
+  }
+}
